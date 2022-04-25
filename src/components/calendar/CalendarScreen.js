@@ -8,6 +8,8 @@ import 'react-big-calendar/lib/css/react-big-calendar.css'
 import { messages } from '../../helpers/calendar-messages'
 import { CalendarEvent } from './CalendarEvent'
 import { CalendarModal } from './CalendarModal'
+import { useDispatch } from 'react-redux'
+import { uiOpenModal } from '../../actions/ui'
 
 moment.locale('es');
 
@@ -28,10 +30,13 @@ const myEventsList = [{
 
 export const CalendarScreen = () => {
 
+  const dispatch = useDispatch();
+
   const [lastView, setLastView] = useState( localStorage.getItem('lastView') || 'month' );
 
   const onDoubleClick = (e) => {
-    console.log(e)
+    // console.log(e)
+    dispatch( uiOpenModal() );
   }
 
   const onSelectEvent = (e) => {
