@@ -57,3 +57,19 @@ html, body {
 .ReactModal__Overlay {
     z-index: 10;
 }
+
+/* Date Picker */
+
+.react-datetime-picker input:focus {
+    outline: none;
+}
+
+.react-datetime-picker__wrapper {
+    border: 0px solid gray !important;
+    align-items: center;
+}
+
+.react-datetime-picker__inputGroup {
+    display: flex;
+    align-items: center;
+}
