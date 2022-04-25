@@ -73,3 +73,14 @@ html, body {
     display: flex;
     align-items: center;
 }
+
+/* FABS */
+
+.fab {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 100%;
+}
