@@ -84,3 +84,11 @@ html, body {
     padding: 25px;
     border-radius: 100%;
 }
+
+.fab-danger {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    padding: 10px;
+    z-index: 10;
+}
